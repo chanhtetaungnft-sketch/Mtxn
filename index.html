@@ -171,12 +171,12 @@ document.getElementById("searchBox").addEventListener("keyup", function(){
 
             // Merchant Info
             merchantDiv.innerHTML = `
-            <div class="merchant-card fade-in">
-                <h2>${item["Merchant Name"]}</h2>
-                <p>MID: ${item["MID"]}</p>
-                <p>Status: ${item["Portal Status"]}</p>
-                <p>MDR: ${item["MDR Offus"]}</p>
-            </div>`;
+<div class="merchant-card fade-in">
+    <h2>${item["Merchant Name"]}</h2>
+    <p>MID: ${item["MID"]}</p>
+    <p>Status: ${item["Portal Status"]}</p>
+    <p>MDR: ${(Number(item["MDR Offus"] || 0) * 100).toFixed(2)}%</p>
+</div>`;
 
             // KPI Calculation
             let totalCount = 0;
