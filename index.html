@@ -7,17 +7,9 @@
 <style>
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(270deg, #4facfe, #00f2fe, #43e97b);
-    background-size: 600% 600%;
-    animation: gradientMove 15s ease infinite;
+    background-color: #fff; /* white background */
     padding: 30px;
-    color: #000; /* Font color black */
-}
-
-@keyframes gradientMove {
-    0% {background-position:0% 50%;}
-    50% {background-position:100% 50%;}
-    100% {background-position:0% 50%;}
+    color: #000; /* font black */
 }
 
 /* Title */
@@ -34,17 +26,18 @@ h1 {
     padding: 15px;
     width: 420px;
     border-radius: 15px;
-    border: none;
+    border: 1px solid #ccc;
     font-size: 16px;
     outline: none;
-    backdrop-filter: blur(12px);
     color: #000; /* input text black */
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Merchant Card */
 .merchant-card {
-    background: rgba(255,255,255,0.7);
-    backdrop-filter: blur(18px);
+    background: rgba(0,0,0,0.05);
+    backdrop-filter: blur(15px);
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
@@ -64,8 +57,8 @@ h1 {
     min-width: 150px;
     padding: 20px;
     border-radius: 18px;
-    background: rgba(255,255,255,0.65);
-    backdrop-filter: blur(15px);
+    background: rgba(0,0,0,0.05);
+    backdrop-filter: blur(12px);
     text-align: center;
     color: #000; /* text black */
     transition: 0.3s;
@@ -88,8 +81,8 @@ h1 {
 
 /* Cards */
 .card {
-    background: rgba(255,255,255,0.65);
-    backdrop-filter: blur(20px);
+    background: rgba(0,0,0,0.05);
+    backdrop-filter: blur(15px);
     border-radius: 20px;
     padding: 20px;
     color: #000; /* text black */
